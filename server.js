@@ -8,8 +8,11 @@ const HOST='0.0.0.0';
 
 //App
 const app=express();
-app.get('/a',(req,res)=>{
+app.get('/',(req,res)=>{
 	res.send(' Docker is running');
+});
+app.get('/a',(req,res)=>{
+	res.send('HELLO Anshika Docker is running');
 });
 
 
